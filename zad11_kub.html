@@ -8,11 +8,11 @@
 // Zadanie 11
 
 function oblicz_sekundy() {
-    var D1_kow = prompt("Podaj pierwszy dzień (D1):", "");
-    var D2_kow = prompt("Podaj drugi dzień (D2):", "");
+    var D1_kub = prompt("Podaj pierwszy dzień (D1):", "");
+    var D2_kub = prompt("Podaj drugi dzień (D2):", "");
     
-    var a = parseFloat(D1_kow);
-    var b = parseFloat(D2_kow);
+    var a = parseFloat(D1_kub);
+    var b = parseFloat(D2_kub);
     var sekund = (a - b) * 24 * 60 * 60;
     
     document.write("<div style='color:green; font-size:40px;'>");
@@ -20,7 +20,7 @@ function oblicz_sekundy() {
     document.write("</div>");
 }
 
-function okno_zamknij_kow() {
+function okno_zamknij_kub() {
     window.close();
 }
 </script>
@@ -29,6 +29,6 @@ function okno_zamknij_kow() {
     <h2>Zadanie 11 – Ile sekund</h2>
     <input type="button" value="Oblicz sekundy" onclick="oblicz_sekundy()">
     <br><br>
-    <input type="button" value="Zamknij okno" onclick="okno_zamknij_kow()">
+    <input type="button" value="Zamknij okno" onclick="okno_zamknij_kub()">
 </body>
 </html>
