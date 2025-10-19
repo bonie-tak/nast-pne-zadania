@@ -14,19 +14,19 @@
 <body>
 <div style="color:green; font-size:40px;">
 <script type="text/javascript">
-var D1_kow = prompt("Podaj pierwszy dzień (D1):", "");
-var D2_kow = prompt("Podaj drugi dzień (D2):", "");
+var D1_kub = prompt("Podaj pierwszy dzień (D1):", "");
+var D2_kub = prompt("Podaj drugi dzień (D2):", "");
 var sekund;
-var a = parseFloat(D1_kow);
-var b = parseFloat(D2_kow);
+var a = parseFloat(D1_kub);
+var b = parseFloat(D2_kub);
 sekund = (a - b) * 24 * 60 * 60;
 document.write("Ilość sekund między dniami " + a + " i " + b + " = " + sekund + " sekund<br>");
-function okno_zamknij_kow() {
+function okno_zamknij_kub() {
     window.close();
 }
 </script>
 </div>
-<input type="button" value="Zamknij okno" onclick="okno_zamknij_kow()">
+<input type="button" value="Zamknij okno" onclick="okno_zamknij_kub()">
 </body>
 </html>
 </textarea>
