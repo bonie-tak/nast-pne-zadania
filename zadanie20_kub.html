@@ -1,0 +1,61 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <script>
+    function AB_kub() {
+      let aX_kub = parseFloat(document.getElementById('aX').value);
+      let aY_kub = parseFloat(document.getElementById('aY').value);
+
+      let bX_kub = parseFloat(document.getElementById('bX').value);
+      let bY_kub = parseFloat(document.getElementById('bY').value);
+
+      document.getElementById("answer").innerHTML = "|AB|= "
+        + (Math.sqrt((aX_kub - bX_kub) ** 2 + (aY_kub - bY_kub) ** 2)).toFixed(2);
+    }
+    function BC_kub() {
+      let bX_kub = parseFloat(document.getElementById('bX').value);
+      let bY_kub = parseFloat(document.getElementById('bY').value);
+      let cX_kub = parseFloat(document.getElementById('cX').value);
+      let cY_kub = parseFloat(document.getElementById('cY').value);
+
+      document.getElementById("answer").innerHTML = "|BC|= "
+        + (Math.sqrt((cX_kub - bX_kub) ** 2 + (cY_kub - bY_kub) ** 2)).toFixed(2);
+    }
+
+    function AC_kub() {
+      let aX_kub = parseFloat(document.getElementById('aX').value);
+      let aY_kub = parseFloat(document.getElementById('aY').value);
+      let cX_kub = parseFloat(document.getElementById('cX').value);
+      let cY_kub = parseFloat(document.getElementById('cY').value);
+
+      document.getElementById("answer").innerHTML = "|AC|= "
+        + (Math.sqrt((aX_kub - cX_kub) ** 2 + (aY_kub - cY_kub) ** 2)).toFixed(2);
+    }
+
+  </script>
+
+  Podaj X punktu A: <input type="text" id="aX"><br>
+  Podaj Y punktu A: <input type="text" id="aY"><br>
+  <br>
+  <br>
+  Podaj X punktu B: <input type="text" id="bX"><br>
+  Podaj Y punktu B: <input type="text" id="bY"><br>
+  <br>
+  <br>
+  Podaj X punktu C: <input type="text" id="cX"><br>
+  Podaj Y punktu C: <input type="text" id="cY"><br>
+  <br>
+  <br>
+
+  <input type="button" value="Oblicz AB" onclick="AB_kub()"><br>
+  <br>
+  <input type="button" value="Oblicz BC" onclick="BC_kub()"><br>
+  <br>
+  <input type="button" value="Oblicz AC" onclick="AC_kub()"><br>
+  <br>
+  <br>
+  <div style="color:red;font-size:50px;" id="answer"></div>
+</body>
+</html>
