@@ -1,0 +1,43 @@
+<html>
+<body>
+<textarea cols="130" rows="33">
+<html>
+<head>
+    <script type="text/javascript">
+        var spodnie = {
+            rodzaj: 'długie',
+           kieszenie: 'brak',
+            nazwa_spodni: 'dresy',
+           spodnie_wyswietl_kubica: function (){
+                document.write(
+                    "kieszenie: " + this.kieszenie + "<br>" +
+                    "nazwa_spodni: " + this.nazwa_spodni + "<br>" +
+                    "ile_rodzaj: " + this.ile_rodzaj + "<br>"
+                );
+            }
+        };
+
+        spodnie.spodnie_wyswietl_kubica();
+        spodnie.rozmiar = 164;
+        spodnie.wypisz = function() {
+            alert('ilość: ' + this.rozmiar + ' spodni');
+        };
+        spodnie.wypisz();
+    </script>
+</head>
+<body>
+    <br>
+    Programowanie obiektowe. <br>
+    Obiekt to spodnie<br>
+    Pola:<br>
+    rodzaj<br>
+    kieszenie<br>
+    nazwa_spodni<br>
+    metoda: spodnie_wyswietl_kubica<br>
+    nowe pole: miejsca<br>
+    nowa metoda: wypisz()<br>
+</body>
+</html>
+  </textarea>
+</body>
+</html>
