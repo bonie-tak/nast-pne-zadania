@@ -1,0 +1,45 @@
+<html>
+<head>
+    <script type="text/javascript">
+
+    function spodnie(nazwa, rodzaj, kieszenie, rozmiar) {
+        this.nazwa_spodni = nazwa;
+        this.rodzaj = rodzaj;
+        this.kieszenie = kieszenie;
+        this.rozmiar = rozmiar;
+    }
+
+
+    spodnie.prototype.wypisz = function () {
+        alert(
+            this.nazwa_spodni + ' ' +
+            this.rodzaj + ' rodzaj ' +
+            this.kieszenie + ' ' +
+            this.rozmiar + ' spodni'
+        );
+    };
+
+
+    var s1 = new spodnie("dresy", długie , "kieszeni brak", 164);
+    var s2 = new spodnie("jeansy", krótkie , "kieszenie są", 140);
+    var s3 = new spodnie("jeansy", krótkie, "kieszenie są", 150);
+
+
+    s1.wypisz();
+    s2.wypisz();
+    s3.wypisz();
+
+
+    document.write("Dostęp do właściwości:<br><br>");
+
+    document.write("spodnie 1: " + s1.nazwa_spodni + " " + s1.rodzaj + " " + s1.kieszenie + " " + s1.rozmiar + "<br>");
+    document.write("spodnie 2: " + s2.nazwa_spodni + " " + s2.rodzaj + " " + s2.kieszenie + " " + s2.rozmiar + "<br>");
+    document.write("spodnie 3: " + s3.nazwa_spodni + " " + s3.rodzaj + " " + s3.kieszenie + " " + s3.rozmiar + "<br>");
+
+    </script>
+</head>
+<body>
+    <br>
+    Programowanie obiektowe
+</body>
+</html>
